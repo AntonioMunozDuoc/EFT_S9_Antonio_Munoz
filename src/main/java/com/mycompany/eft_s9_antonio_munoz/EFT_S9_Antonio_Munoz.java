@@ -396,6 +396,7 @@ public class EFT_S9_Antonio_Munoz {
         }
         System.out.println();
     }
+    //Funcion que luego de imprimir la boleta pregunta si cerrar el programa o dar paso a otro usuario
     public static void finalizarPrograma(){
         System.out.println("¿Que desea hacer?");
         System.out.println("1- Realizar compras con otro usuario   2- Cerrar programa");
