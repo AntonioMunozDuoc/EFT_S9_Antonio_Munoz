@@ -20,7 +20,6 @@ public class EFT_S9_Antonio_Munoz {
     public static Scanner scanner = new Scanner(System.in);
     public static List<String[]> entradasReservadas = new ArrayList<>();
     public static List<String[]> entradasCompradas = new ArrayList<>();
-    public static List<String[]> reservasGlobales = new ArrayList<>();
     public static String[] datosUsuario = new String[5];
     public static String[][]vip = new String[4][6];
     public static String[][]palco = new String[4][6];
@@ -92,7 +91,7 @@ public class EFT_S9_Antonio_Munoz {
                                Ingrese el número de la opción que desea elegir
                                ========================================================="""); 
 
-            int opcionMenu = esValido(7);
+            int opcionMenu = esValido(6);
 
             switch (opcionMenu){
                 case 1:
@@ -406,6 +405,7 @@ public class EFT_S9_Antonio_Munoz {
                 System.out.println("Muchas gracias por su visita, se reiniciara el programa para un nuevo usuario");
                 usuarioNuevo = true;
                 entradasCompradas.clear();
+                descuentos = 0;
                 break;
             case 2:
                 System.out.println("Muchas gracias por su visita, que tenga un excelente día");
